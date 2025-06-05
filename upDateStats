@@ -1,0 +1,23 @@
+const character = {
+    level: 5, 
+    character: "Pikachu",
+    status: "inactive"
+};
+
+function upDateStats (level, character) {
+    level = level + 1;
+    character.status = "active";
+    return character;
+};
+
+const currentLevel = 5;
+
+const player = {
+    name: "Hero",
+    status: "inactive"
+};
+
+upDateStats (currentLevel, player);
+
+console.log(currentLevel)
+console.log(player);
