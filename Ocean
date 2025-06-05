@@ -1,0 +1,12 @@
+const ocean = {
+    deep: {
+        treasure: "gold"
+    }
+};
+
+function searchInOcean(ocean, section, item) {
+   return ocean[section]?.[item] !== undefined
+  };
+
+console.log(searchInOcean(ocean, 'deep', 'treasure'))
+console.log(searchInOcean(ocean, 'deep', 'shark'))
